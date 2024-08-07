@@ -1,0 +1,502 @@
+/* Add these styles if they don't exist already */
+body {
+  background-color: #f5f5f5; /* This is a light grey color */
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 15px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  color: #333;
+}
+
+/* ...other styles from previous step... */
+
+
+.card-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card-header img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-header .name {
+  font-weight: bold;
+}
+
+.card-content {
+  color: #333;
+}
+
+.card-actions {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-actions button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #586069;
+  font-size: 14px;
+}
+
+.card-actions button:hover {
+  color: #0366d6;
+}
+
+/* Add more styling as needed */
+
+.custom-container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 1320px;
+  }
+}
+
+.comment {
+  background: #f8f9fa; /* Light grey background */
+  border: 1px solid #dee2e6; /* Light grey border */
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 10px 0;
+}
+
+.new-comment-input {
+  width: 90%;
+  padding: 8px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+
+.comment-content {
+  color: #333; /* Same as title or as needed */
+}
+
+.comment-header {
+  margin-bottom: 15px;
+}
+
+.comment-subtitle {
+  margin: 0;
+  color: #666; /* Lighter gray for the subtitle */
+  font-size: .85em;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.new-post-container {
+  width: 75%; /* Match the width of post-card */
+  max-width: 1000px; /* Match the max-width of post-card */
+  margin: 20px auto; /* Center the container */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.new-post-input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: 1px solid #dee2e6; /* Light grey border */
+  border-radius: 22px;
+}
+
+.new-post-input:focus {
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 2px skyblue;
+}
+
+.new-post-actions {
+  display: flex;
+  align-items: center;
+}
+
+.post-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+  color: #586069; /* Icon color - adjust as needed */
+  font-size: 16px; /* Adjust as needed */
+}
+
+.post-action-btn:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+/* You might need to add more styling based on the icons you are using */
+
+
+/* ...other styles... */
+
+/* App.css */
+.btn-back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust size as needed */
+  color: #586069; /* Adjust color as needed */
+  padding: 8px;
+  margin-bottom: 10px; /* Spacing from the next content */
+  display: inline-block; /* Allows for proper spacing and alignment */
+}
+
+.btn-back:hover {
+  color: #0366d6; /* Highlight color on hover */
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-weight: bold; /* This might not make a significant difference for all users */
+  font-size: 24px; 
+}
+
+.btn-back:hover .arrow {
+  transform: translateX(-5px); /* Adds a little leftward motion on hover */
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0366d6; /* Dark background */
+  color: white;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-item {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.navbar-item:hover {
+  background-color: #555; /* Slightly lighter on hover */
+}
+
+/* LoginPage.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+.login-form {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* RegisterPage.css */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+.register-form {
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* PostDetails.css */
+.post-card {
+  width: 75%; /* Adjust the width as desired */
+  max-width: 1000px; /* You can set a max-width if needed */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Top and bottom margins + auto side margins for centering */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+.post-header {
+  margin-bottom: 15px;
+}
+
+.post-title {
+  margin: 0;
+  color: #333; /* Dark gray for the text */
+  font-size: 1.5em;
+}
+
+.post-subtitle {
+  margin: 0;
+  color: #666; /* Lighter gray for the subtitle */
+  font-size: .85em;
+}
+
+.post-content {
+  color: #333; /* Same as title or as needed */
+  cursor: pointer;
+}
+
+.post-footer {
+  color: #8c8c8c; /* Light grey color */
+  align-self: flex-end; /* Align to the left */
+  margin-top: auto; /* Pushes to the bottom of the container */
+  font-size: 0.8em; /* Smaller font size for footer content */
+  cursor: pointer;
+}
+
+.author-name {
+  color: #000000; /* Black color for author's name */
+}
+
+.post-metadata {
+  color: #808080; /* Light grey color for the metadata like time */
+}
+
+.view-dogs-metadata {
+  color: #238cce; /* Light grey color for the metadata like time */
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0; /* Light grey color */
+  width: 75%; /* Match the width of new-post-container */
+  max-width: 1000px; /* Match the max-width of new-post-container */
+  margin: 0 auto; /* Center the line horizontally */
+}
+
+.account-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dog-list {
+  margin-top: 20px;
+}
+
+.dog-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.dog-form input[type="text"], .dog-form button {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.dog-form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dog-form button:hover {
+  background-color: #0056b3;
+}
+
+.dog-select {
+  padding: 8px;
+  margin: 8px;
+  width: 5%;
+  box-sizing: border-box;
+}
+
+
+
+
+
